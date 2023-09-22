@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'sample yaml'
+author: 'Sundar Nalli'
+inputs:
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Cloud Practioner'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
